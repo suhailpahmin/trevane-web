@@ -37,6 +37,7 @@
   <li><strong>Supabase</strong> — our backend database and authentication provider. Your account and medication data is stored there, encrypted in transit.</li>
   <li><strong>Apple / Google Sign-In</strong> — if you choose to sign in with either, authentication is handled by Apple or Google directly; Trevane never sees your password.</li>
   <li><strong>RxTerms (U.S. National Library of Medicine)</strong> — when you search for a medication name, Trevane queries this public, free medication-name lookup service to suggest real drug names. No account or personal data is sent with this lookup, only the text you type.</li>
+  <li><strong>Sentry</strong> — used only to catch crashes and technical errors so we can fix them. This is diagnostic tooling, not advertising or tracking: no medication names, no account identity, and no health data are ever sent to it. Network request details (including any URLs that could contain account identifiers) are stripped before anything leaves your device.</li>
 </ul>
 <p>We do not share your medication or health data with any other third party, and we do not sell it.</p>
 
